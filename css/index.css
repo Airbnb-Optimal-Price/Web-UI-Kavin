@@ -153,121 +153,278 @@ button {
   padding-left: 22px;
   padding-right: 22px;
 }
-.top-header {
-  display: flex;
-  flex-direction: row;
+@media (min-width: 501px) {
+  .top-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-left: 50%;
+  }
+  .top-header nav a {
+    text-decoration: none;
+    color: #484848;
+    font-size: 25px;
+  }
+  #background-photo {
+    position: relative;
+    width: 100% !important;
+  }
 }
-.top-header nav {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-  margin-top: 3%;
-  margin-left: 50%;
+@media (min-width: 0px) and (max-width: 500px) {
+  .top-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+    margin-left: 3%;
+  }
+  .top-header nav a {
+    text-decoration: none;
+    color: #484848;
+    font-size: 18px;
+  }
+  #background-photo {
+    position: relative;
+    width: 10%;
+  }
 }
-.top-header nav a {
-  text-decoration: none;
-  color: #484848;
-  font-size: 25px;
+@media (min-width: 501px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 44.25%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
-#background-photo {
-  position: relative;
-  width: 100% !important;
+@media (min-width: 0px) and (max-width: 500px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 44.25%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin-left: 44.25%;
-  margin-top: 2%;
-  margin-bottom: 3%;
+@media (min-width: 501px) {
+  #reservations .first-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  #reservations .reservations-bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-content: space-evenly;
+  }
+  #reservations .reservations-bar .where {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 2.5px;
+    padding: 3px 10px;
+    padding-top: 3vh;
+  }
+  #reservations .reservations-bar .checkin-checkout {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 2.5px;
+    padding: 3px 10px;
+    padding-top: 3vh;
+  }
+  #reservations .reservations-bar .guests-button {
+    background: #767676;
+    color: white;
+    margin-top: 1vh;
+  }
+  #reservations .reservations-bar .search-button {
+    background: #FF5A5F;
+    margin-top: 3.5vh;
+  }
+  #testimonials .second-text {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5vh;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+  }
+  #testimonials .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 9%;
+  }
+  #testimonials .images .paragraph {
+    width: 60%;
+  }
+  #testimonials .images .people {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  #testimonials .images .people .Greta {
+    border-radius: 50%;
+  }
+  #testimonials .images .people .John {
+    border-radius: 50%;
+  }
+  #testimonials .images .people .Kelly {
+    border-radius: 50%;
+  }
+  #testimonials .images .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+  }
+  #testimonials .images .location h5 {
+    font-weight: bold;
+  }
 }
-footer {
-  display: flex;
-  justify-content: center;
-}
-#reservations .first-text {
-  display: flex;
-  justify-content: center;
-  margin-top: 5vh;
-}
-#reservations .reservations-bar {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  justify-content: space-evenly;
-}
-#reservations .reservations-bar .where {
-  background-color: transparent;
-  color: #000000;
-  outline: none;
-  outline-style: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid #000000 2.5px;
-  padding: 3px 10px;
-  padding-top: 3vh;
-}
-#reservations .reservations-bar .checkin-checkout {
-  background-color: transparent;
-  color: #000000;
-  outline: none;
-  outline-style: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: solid #000000 2.5px;
-  padding: 3px 10px;
-  padding-top: 3vh;
-}
-#reservations .reservations-bar .guests-button {
-  background: #767676;
-  color: white;
-  margin-top: 1vh;
-}
-#reservations .reservations-bar .search-button {
-  background: #FF5A5F;
-  margin-top: 3.5vh;
-}
-#testimonials .second-text {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 5vh;
-  margin-left: 10%;
-  margin-bottom: 5vh;
-}
-#testimonials .images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-left: 9%;
-}
-#testimonials .images .paragraph {
-  width: 60%;
-}
-#testimonials .images .people {
-  display: flex;
-  flex-direction: row;
-  margin-top: 5%;
-}
-#testimonials .images .people .Greta {
-  border-radius: 50%;
-}
-#testimonials .images .people .John {
-  border-radius: 50%;
-}
-#testimonials .images .people .Kelly {
-  border-radius: 50%;
-}
-#testimonials .images .location {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  width: 70%;
-}
-#testimonials .images .location h5 {
-  font-weight: bold;
+@media (min-width: 0px) and (max-width: 500px) {
+  #reservations .first-text {
+    display: flex;
+    margin-top: 5vh;
+  }
+  #reservations .first-text h3 {
+    margin-left: 1%;
+    text-align: center;
+  }
+  #reservations .reservations-bar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    justify-content: space-evenly;
+  }
+  #reservations .reservations-bar #where {
+    margin-left: 13vh;
+    margin-bottom: 5vh;
+  }
+  #reservations .reservations-bar #where .where {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 2.5px;
+    padding: 3px 10px;
+    padding-top: 3vh;
+  }
+  #reservations .reservations-bar #checkin-checkout {
+    margin-left: 13vh;
+    margin-bottom: 5vh;
+  }
+  #reservations .reservations-bar #checkin-checkout .checkin-checkout {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000000 2.5px;
+    padding: 3px 10px;
+    padding-top: 3vh;
+  }
+  #reservations .reservations-bar #guests {
+    margin-left: 15vh;
+    margin-bottom: 1.5vh;
+  }
+  #reservations .reservations-bar #guests .guests-button {
+    background: #767676;
+    color: white;
+    margin-top: 1vh;
+  }
+  #reservations .reservations-bar .search-button {
+    margin-left: 15vh;
+    margin-bottom: 2vh;
+    background: #FF5A5F;
+    margin-top: 3.5vh;
+  }
+  #testimonials .second-text {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5vh;
+    margin-left: 1%;
+    margin-bottom: 5vh;
+  }
+  #testimonials .second-text h3 {
+    text-align: center;
+  }
+  #testimonials .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 16.5%;
+  }
+  #testimonials .images .paragraph {
+    width: 80%;
+    margin-top: 1vh;
+  }
+  #testimonials .images .second-image {
+    margin-top: 3vh;
+  }
+  #testimonials .images .third-image {
+    margin-top: 3vh;
+  }
+  #testimonials .images .people {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  #testimonials .images .people .Greta {
+    border-radius: 50%;
+  }
+  #testimonials .images .people .John {
+    border-radius: 50%;
+  }
+  #testimonials .images .people .Kelly {
+    border-radius: 50%;
+  }
+  #testimonials .images .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 70%;
+  }
+  #testimonials .images .location h5 {
+    font-weight: bold;
+  }
 }
