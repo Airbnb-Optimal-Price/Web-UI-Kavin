@@ -4,7 +4,6 @@
 
     .background-photo {
       position: relative;
-      background-image: transparent;
       background-position: center;
       background-repeat: no-repeat;
       width: 100%;
@@ -15,27 +14,27 @@
     .top-header {
       display: flex;
       flex-direction: row;
+      position: absolute;
+      top: 10%;
+      left: 11%;
+      transform: translate(-10%,-50%);
 
-        #logo {
-          
-        }
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        margin-left: 110vh;
+        justify-content: flex-end;
+        align-items: center;
 
-
-        nav {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          justify-content: space-evenly;
-
-            a {
+          a {
               text-decoration: none;
               color: #484848;
-              font-size: 25px;
-            }
+              font-size: 23px;
           }
         }
       }
     }
+  }
 
 @media(min-width: 0px) and (max-width:500px) {
   .top-header {

@@ -156,7 +156,6 @@ button {
 @media (min-width: 501px) {
   #top .background-photo {
     position: relative;
-    background-image: transparent;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -166,17 +165,22 @@ button {
   #top .top-header {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 10%;
+    left: 11%;
+    transform: translate(-10%, -50%);
   }
-  #top .top-header nav {
+  #top .top-header .navigation {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+    margin-left: 110vh;
+    justify-content: flex-end;
+    align-items: center;
   }
-  #top .top-header nav a {
+  #top .top-header .navigation a {
     text-decoration: none;
     color: #484848;
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 @media (min-width: 0px) and (max-width: 500px) {
