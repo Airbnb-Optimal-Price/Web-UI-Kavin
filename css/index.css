@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
 }
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -136,12 +136,15 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 h3 {
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 h4 {
   font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 10px;
 }
 button {
@@ -154,33 +157,37 @@ button {
   padding-right: 22px;
 }
 @media (min-width: 501px) {
-  #top .background-photo {
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
+  .top-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .top-header #logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5%;
+  }
+  .top-header .navigation {
+    display: flex;
     width: 100%;
-    clear: both;
-    overflow: hidden;
+    margin-left: 50%;
+    margin-top: 3vh;
+    justify-content: center;
   }
-  #top .top-header {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 10%;
-    left: 11%;
-    transform: translate(-10%, -50%);
+  .top-header .navigation nav {
+    justify-content: space-evenly;
   }
-  #top .top-header .navigation {
-    display: flex;
-    flex-direction: row;
-    margin-left: 110vh;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  #top .top-header .navigation a {
+  .top-header .navigation nav a {
     text-decoration: none;
     color: #484848;
-    font-size: 23px;
+    font-size: 1.6rem;
+  }
+  .background {
+    display: flex;
+  }
+  .background .background-photo {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 @media (min-width: 0px) and (max-width: 500px) {
@@ -188,31 +195,47 @@ button {
     display: flex;
     flex-direction: row;
   }
-  .top-header nav {
+  .top-header .navigation {
     display: flex;
-    flex-direction: row;
     width: 100%;
-    justify-content: space-evenly;
-    margin-top: 4vh;
-    margin-left: 3%;
+    margin-top: 10%;
+    justify-content: center;
   }
-  .top-header nav a {
+  .top-header .navigation nav {
+    justify-content: space-evenly;
+  }
+  .top-header .navigation nav a {
     text-decoration: none;
     color: #484848;
-    font-size: 18px;
+    font-size: 1.2rem;
+    width: 50px;
   }
-  #background-photo {
-    position: relative;
-    width: 10%;
+  .background {
+    display: flex;
+  }
+  .background .background-photo {
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
 }
 @media (min-width: 501px) {
+  hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
   .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-left: 44.25%;
+    margin-left: 41.25%;
     margin-top: 2%;
     margin-bottom: 3%;
   }
@@ -222,12 +245,22 @@ button {
   }
 }
 @media (min-width: 0px) and (max-width: 500px) {
+  hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
   .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-left: 44.25%;
+    margin-left: 20%;
     margin-top: 2%;
     margin-bottom: 3%;
   }
@@ -245,42 +278,13 @@ button {
   #reservations .reservations-bar {
     display: flex;
     flex-direction: row;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 10vh;
     justify-content: space-evenly;
   }
-  #reservations .reservations-bar .where {
-    background-color: transparent;
-    color: #000000;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000000 2.5px;
-    padding: 3px 10px;
-    padding-top: 3vh;
-  }
-  #reservations .reservations-bar .checkin-checkout {
-    background-color: transparent;
-    color: #000000;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000000 2.5px;
-    padding: 3px 10px;
-    padding-top: 3vh;
-  }
-  #reservations .reservations-bar .guests-button {
-    background: #767676;
-    color: white;
-    margin-top: 1vh;
-  }
   #reservations .reservations-bar .search-button {
     background: #FF5A5F;
-    margin-top: 3.5vh;
+    margin-top: 1vh;
   }
   #testimonials .second-text {
     display: flex;
@@ -296,6 +300,7 @@ button {
     margin-left: 9%;
   }
   #testimonials .images .paragraph {
+    margin-top: 3%;
     width: 80%;
   }
   #testimonials .images .people {
@@ -338,49 +343,8 @@ button {
     margin-bottom: 10vh;
     justify-content: space-evenly;
   }
-  #reservations .reservations-bar #where {
-    margin-left: 13vh;
-    margin-bottom: 5vh;
-  }
-  #reservations .reservations-bar #where .where {
-    background-color: transparent;
-    color: #000000;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000000 2.5px;
-    padding: 3px 10px;
-    padding-top: 3vh;
-  }
-  #reservations .reservations-bar #checkin-checkout {
-    margin-left: 13vh;
-    margin-bottom: 5vh;
-  }
-  #reservations .reservations-bar #checkin-checkout .checkin-checkout {
-    background-color: transparent;
-    color: #000000;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #000000 2.5px;
-    padding: 3px 10px;
-    padding-top: 3vh;
-  }
-  #reservations .reservations-bar #guests {
-    margin-left: 15vh;
-    margin-bottom: 1.5vh;
-  }
-  #reservations .reservations-bar #guests .guests-button {
-    background: #767676;
-    color: white;
-    margin-top: 1vh;
-  }
   #reservations .reservations-bar .search-button {
-    margin-left: 15vh;
+    margin-left: 17vh;
     margin-bottom: 2vh;
     background: #FF5A5F;
     margin-top: 3.5vh;

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -129,22 +136,26 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 h3 {
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 h4 {
   font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 10px;
 }
-button {
-  border-radius: 4px;
-  font-size: 16px;
-  border-color: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 22px;
-  padding-right: 22px;
+h5 {
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+i {
+  size: 5rem;
 }
 @media (min-width: 501px) {
   #top .top-header {
@@ -153,112 +164,360 @@ button {
     justify-content: flex-start;
     margin-top: 1.5%;
   }
-  #top .top-header nav {
+  #top .top-header .navigation {
     display: flex;
     flex-direction: row;
-    margin-left: 65%;
+    margin-left: 47%;
     margin-top: 3%;
+    justify-content: space-evenly;
+    width: 50%;
   }
-  #top .top-header nav a {
+  #top .top-header .navigation nav {
+    display: flex;
+  }
+  #top .top-header .navigation nav a {
     text-decoration: none;
     color: #484848;
-    font-size: 23px;
-    justify-content: space-evenly;
+    font-size: 1.2rem;
+    width: 125px;
+    padding-left: 5%;
+    display: inline-block;
   }
   #team-photo .background-photo {
     width: 100%;
   }
 }
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin-left: 44.25%;
-  margin-top: 2%;
-  margin-bottom: 3%;
+@media (min-width: 0px) and (max-width: 500px) {
+  #top .top-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5%;
+  }
+  #top .top-header .navigation {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+  }
+  #top .top-header .navigation a {
+    display: inline-block;
+    text-decoration: none;
+    color: #484848;
+    font-size: 1.2rem;
+    width: auto;
+  }
+  #team-photo .background-photo {
+    width: 100%;
+  }
 }
-footer {
-  display: flex;
-  justify-content: center;
+@media (min-width: 501px) {
+  hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 44.25%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
-#team {
-  margin-top: 3%;
+@media (min-width: 0px) and (max-width: 500px) {
+  hr {
+    display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
 }
-#team .second-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (min-width: 501px) {
+  #team {
+    margin-top: 3%;
+  }
+  #team .second-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #team .second-text p {
+    margin-top: 2%;
+  }
+  #team .images {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #team .images .people1 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people1 .description1 {
+    width: 50%;
+  }
+  #team .images .people2 {
+    margin-top: 2%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people2 .people {
+    margin-right: 10%;
+  }
+  #team .images .people2 .description2 {
+    width: 80%;
+  }
+  #team .images .people3 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people3 .description3 {
+    width: 57%;
+  }
+  #team .images .people4 {
+    margin-top: 2%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people4 .people {
+    margin-right: 10%;
+  }
+  #team .images .people4 .description4 {
+    width: 80%;
+  }
+  #team .images .people5 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people5 .description5 {
+    width: 50%;
+  }
+  #team .images .people6 {
+    margin-top: 2%;
+    margin-right: 21%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people6 .people {
+    margin-right: 0%;
+  }
+  #team .images .people6 .description6 {
+    width: 90%;
+  }
+  #team .images .people7 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people7 .description7 {
+    width: 60%;
+  }
+  #team .images .people8 {
+    margin-top: 2%;
+    margin-right: 18%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people8 .people {
+    margin-right: 5%;
+  }
+  #team .images .people8 .description8 {
+    width: 80%;
+  }
+  #team .images .people9 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people9 .description9 {
+    width: 60%;
+  }
+  #team .images img {
+    border-radius: 50%;
+  }
+  #team .images .job-description1 {
+    margin-left: 30%;
+  }
+  #team .images .job-description2 {
+    margin-left: 10%;
+  }
 }
-#team .second-text p {
-  margin-top: 2%;
-}
-#team .images {
-  margin-top: 3%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#team .images .people1 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#team .images .people2 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-#team .images .people3 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#team .images .people4 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-#team .images .people5 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#team .images .people6 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-#team .images .people7 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#team .images .people8 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-#team .images .people9 {
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-#team .images img {
-  border-radius: 50%;
-}
-#team .images .job-description1 {
-  margin-right: 5%;
-}
-#team .images .job-description2 {
-  margin-left: 5%;
+@media (min-width: 0px) and (max-width: 500px) {
+  #team {
+    margin-top: 3%;
+  }
+  #team .second-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #team .second-text p {
+    margin-top: 2%;
+  }
+  #team .images {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #team .images .people1 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people1 .description1 {
+    width: 50%;
+  }
+  #team .images .people2 {
+    margin-top: 2%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people2 .people {
+    margin-right: 10%;
+  }
+  #team .images .people2 .description2 {
+    width: 80%;
+  }
+  #team .images .people3 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people3 .description3 {
+    width: 57%;
+  }
+  #team .images .people4 {
+    margin-top: 2%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people4 .people {
+    margin-right: 10%;
+  }
+  #team .images .people4 .description4 {
+    width: 80%;
+  }
+  #team .images .people5 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people5 .description5 {
+    width: 50%;
+  }
+  #team .images .people6 {
+    margin-top: 2%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people6 .people {
+    margin-right: 0%;
+  }
+  #team .images .people6 .description6 {
+    width: 90%;
+  }
+  #team .images .people7 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people7 .description7 {
+    width: 60%;
+  }
+  #team .images .people8 {
+    margin-top: 2%;
+    margin-right: 18%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #team .images .people8 .people {
+    margin-right: 5%;
+  }
+  #team .images .people8 .description8 {
+    width: 80%;
+  }
+  #team .images .people9 {
+    margin-top: 2%;
+    margin-left: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #team .images .people9 .description9 {
+    width: 60%;
+  }
+  #team .images img {
+    border-radius: 50%;
+  }
+  #team .images .job-description1 {
+    margin-left: 30%;
+  }
+  #team .images .job-description2 {
+    margin-left: 10%;
+  }
 }

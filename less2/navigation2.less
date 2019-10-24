@@ -8,17 +8,62 @@
       justify-content: flex-start;
       margin-top: 1.5%;
 
-      nav {
+      .navigation {
         display: flex;
         flex-direction: row;
-        margin-left: 65%;
+        margin-left: 47%;
         margin-top: 3%;
+        justify-content: space-evenly;
+        width: 50%;
+
+        nav {
+          display: flex;
+
+          a {
+            text-decoration: none;
+            color: #484848;
+            font-size: 1.2rem;
+            width:125px;
+            padding-left: 5%;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+
+  #team-photo {
+    // height: 10vh;
+
+    .background-photo {
+      width: 100%;
+    }
+  }
+
+}
+
+@media (min-width:0px) and (max-width:500px) {
+  #top {
+
+    .top-header {
+      display: flex;
+      flex-direction: row;
+      // justify-content: flex-start;
+      margin-top: 1.5%;
+
+      .navigation {
+        display: flex;
+        margin-left: 10%;
+        margin-top: 10%;
+        width: 80%;
 
         a {
+          display: inline-block;
           text-decoration: none;
           color: #484848;
-          font-size: 23px;
-          justify-content: space-evenly;
+          font-size: 1.2rem;
+          width: auto;
         }
       }
     }
@@ -31,5 +76,4 @@
       width: 100%;
     }
   }
-
 }
