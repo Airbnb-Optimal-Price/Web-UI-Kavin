@@ -169,17 +169,19 @@ button {
   .top-header .navigation {
     display: flex;
     width: 100%;
-    margin-left: 50%;
-    margin-top: 3vh;
+    margin-left: 55%;
+    margin-top: 2vh;
     justify-content: center;
   }
   .top-header .navigation nav {
+    display: flex;
+    width: 500px;
     justify-content: space-evenly;
   }
   .top-header .navigation nav a {
     text-decoration: none;
-    color: #484848;
-    font-size: 1.6rem;
+    color: #000;
+    font-size: 1.2rem;
   }
   .background {
     display: flex;
@@ -195,20 +197,28 @@ button {
     display: flex;
     flex-direction: row;
   }
+  .top-header #logo {
+    display: none;
+  }
   .top-header .navigation {
     display: flex;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
     justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 13%;
   }
   .top-header .navigation nav {
-    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
   }
   .top-header .navigation nav a {
     text-decoration: none;
     color: #484848;
     font-size: 1.2rem;
-    width: 50px;
+    width: 150px;
   }
   .background {
     display: flex;
@@ -283,8 +293,13 @@ button {
     justify-content: space-evenly;
   }
   #reservations .reservations-bar .search-button {
-    background: #FF5A5F;
+    margin-bottom: 2vh;
+    margin-top: 3.5vh;
+    background-color: #FF5A5F;
     margin-top: 1vh;
+  }
+  #reservations .reservations-bar .search-button:hover {
+    background-color: #00a699;
   }
   #testimonials .second-text {
     display: flex;
@@ -301,7 +316,7 @@ button {
   }
   #testimonials .images .paragraph {
     margin-top: 3%;
-    width: 80%;
+    width: 65%;
   }
   #testimonials .images .people {
     display: flex;
@@ -344,10 +359,11 @@ button {
     justify-content: space-evenly;
   }
   #reservations .reservations-bar .search-button {
-    margin-left: 17vh;
+    margin-left: 35%;
     margin-bottom: 2vh;
-    background: #FF5A5F;
     margin-top: 3.5vh;
+    background-color: #FF5A5F;
+    margin-top: 1vh;
   }
   #testimonials .second-text {
     display: flex;

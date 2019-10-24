@@ -154,23 +154,25 @@ h5 {
 p {
   font-family: 'Open Sans', sans-serif;
 }
-i {
-  size: 5rem;
-}
 @media (min-width: 501px) {
   #top .top-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 1.5%;
+    margin-top: 0.5%;
+  }
+  #top .top-header #logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5%;
   }
   #top .top-header .navigation {
     display: flex;
     flex-direction: row;
-    margin-left: 47%;
-    margin-top: 3%;
-    justify-content: space-evenly;
-    width: 50%;
+    margin-left: 55%;
+    margin-top: 1.5vh;
+    justify-content: center;
+    width: 100%;
   }
   #top .top-header .navigation nav {
     display: flex;
@@ -193,18 +195,28 @@ i {
     flex-direction: row;
     margin-top: 1.5%;
   }
+  #top .top-header .logo {
+    display: none;
+  }
   #top .top-header .navigation {
     display: flex;
-    margin-left: 10%;
-    margin-top: 10%;
-    width: 80%;
+    width: 100%;
+    margin-top: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 13%;
   }
-  #top .top-header .navigation a {
-    display: inline-block;
+  #top .top-header .navigation nav {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    align-items: center;
+  }
+  #top .top-header .navigation nav a {
     text-decoration: none;
     color: #484848;
     font-size: 1.2rem;
-    width: auto;
+    width: 150px;
   }
   #team-photo .background-photo {
     width: 100%;
